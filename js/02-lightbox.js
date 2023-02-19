@@ -17,3 +17,8 @@ function createImgGallery(galleryItems) {
 }
 
 paletteContainer.insertAdjacentHTML(`beforeend`, imgGallery);
+
+new SimpleLightbox('.gallery a', {
+  captionsData: 'alt',
+  captionDelay: 250,
+});
